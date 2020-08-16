@@ -4,9 +4,9 @@ public class Tile : MonoBehaviour
 {
     [SerializeField] TileData tileData;
 
-    int xCoord, yCoord;
+    [SerializeField] [HideInInspector] int xCoord, yCoord;
 
-    bool isWalkable;
+    [SerializeField] [HideInInspector] bool isWalkable;
     public bool IsWalkable
     {
         get { return isWalkable; }
